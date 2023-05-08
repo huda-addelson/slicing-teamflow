@@ -6,7 +6,7 @@ import Line from './Line';
 
 export default function Support() {
   return (
-    <div className='mx-auto container pt-40 pb-20 px-4 md:px-0'>
+    <div className='mx-auto container pt-40 pb-20 px-4 xl:px-10'>
       <div className='flex flex-col md:flex-row justify-between w-full'>
         <div className='w-full md:w-2/4'>
           <img

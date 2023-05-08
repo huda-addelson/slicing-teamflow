@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Planning from '@/components/Planning';
 import SetupMinute from '@/components/SetupMinute';
 import Sponsors from '@/components/Sponsors';
+import Subscribe from '@/components/Subscribe';
 import Support from '@/components/Support';
 import Time from '@/components/Time';
 import Visualize from '@/components/Visualize';
@@ -27,6 +28,7 @@ export default function Home() {
       <Time />
       <Visualize />
       <Support />
+      <Subscribe />
     </div>
   );
 }

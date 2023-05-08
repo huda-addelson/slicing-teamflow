@@ -22,10 +22,10 @@ export default function CardBanner({
   desc,
 }: Props) {
   return (
-    <div className='container mx-auto py-20 md:py-40 px-4 md:px-0'>
+    <div className='container mx-auto py-10 md:py-40 px-4 xl:px-10'>
       <div className='flex flex-col gap-y-24 '>
         <Title text={text || ''} textColor={textColor || ''} />
-        <div className='grid grid-cols-11 items-center gap-3 md:gap-0'>
+        <div className='grid grid-cols-11 items-center gap-3 xl:gap-10'>
           <div className='col-span-11 md:col-span-6'>
             <img src={`/images/${img}.svg`} alt={img} />
           </div>

@@ -21,7 +21,7 @@ export default function Banner({
   return (
     <div className='py-20 md:py-24'>
       <div className='w-full bg-secondary'>
-        <div className='container mx-auto px-4 py-4 md:py-0 md:px-0'>
+        <div className='container mx-auto px-4 py-4 md:py-0 xl:px-10'>
           <div
             className={`flex flex-col gap-y-4 md:gap-y-0  pt-5 items-center justify-between ${
               reverse ? 'md:flex-row-reverse' : ''

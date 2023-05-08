@@ -9,7 +9,7 @@ export default function Sponsors() {
     'sponsor-4',
   ];
   return (
-    <div className='container mx-auto py-10 md:py-24 px-4 md:px-0'>
+    <div className='container mx-auto py-10 md:py-24 px-4 xl:px-10'>
       <Line background='bg-main' />
       <div className='flex justify-between items-center flex-col md:flex-row gap-y-3 md:gap-y-0'>
         <div className='w-full md:max-w-xl'>

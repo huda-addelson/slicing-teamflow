@@ -23,7 +23,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className='absolute top-0 left-0 right-0 container mx-auto px-4 md:px-0'>
+    <div className='absolute top-0 left-0 right-0 container mx-auto px-4 xl:px-10'>
       <div className='flex justify-between items-center w-full h-[80px]'>
         <div className='flex gap-1'>
           <img src='/images/logo.png' alt='logo' width='25' height='25' />

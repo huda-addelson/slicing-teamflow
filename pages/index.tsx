@@ -13,7 +13,7 @@ import Visualize from '@/components/Visualize';
 export default function Home() {
   return (
     <div className='font-main'>
-      <div className='relative min-h-screen w-full bg-hero '>
+      <div className='relative min-h-screen w-full bg-hero'>
         <div className='relative min-h-screen flex justify-center items-center'>
           <Navbar />
           <Hero />

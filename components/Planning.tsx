@@ -27,8 +27,8 @@ export default function Planning() {
     },
   ];
   return (
-    <div className='container mx-auto py-24'>
-      <div className='flex flex-col text-center gap-y-24'>
+    <div className='container mx-auto py-20 md:py-24 px-4 md:px-0'>
+      <div className='flex flex-col text-center gap-y-10 md:gap-y-24'>
         <Title text='What you' textColor='can do?' />
         <div className='grid gap-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
           {plan.map((p, index) => (

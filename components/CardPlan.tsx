@@ -8,10 +8,10 @@ interface Props {
 
 export default function CardPlan({ img, title, desc }: Props) {
   return (
-    <div className='flex flex-col items-center text-center gap-y-10'>
+    <div className='flex flex-col items-center text-center gap-y-3 md:gap-y-10'>
       <img src={img} alt='' />
-      <h3 className='text-2xl font-bold text-[#2B3377]'>{title}</h3>
-      <p className='text-xl font-light lg:px-10'>{desc}</p>
+      <h3 className='text-xl md:text-2xl font-bold text-[#2B3377]'>{title}</h3>
+      <p className='text-base md:text-xl font-light lg:px-10'>{desc}</p>
     </div>
   );
 }

@@ -22,15 +22,15 @@ export default function CardBanner({
   desc,
 }: Props) {
   return (
-    <div className='container mx-auto py-40'>
+    <div className='container mx-auto py-20 md:py-40 px-4 md:px-0'>
       <div className='flex flex-col gap-y-24 '>
         <Title text={text || ''} textColor={textColor || ''} />
-        <div className='grid grid-cols-11 items-center'>
-          <div className='col-span-6'>
+        <div className='grid grid-cols-11 items-center gap-3 md:gap-0'>
+          <div className='col-span-11 md:col-span-6'>
             <img src={`/images/${img}.svg`} alt={img} />
           </div>
-          <div className='col-span-5'>
-            <div className='w-3/4'>
+          <div className='col-span-11 md:col-span-5'>
+            <div className='w-full md:w-3/4'>
               <Heading text={headingText} />
             </div>
             <Line background={bakcground} />

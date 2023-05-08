@@ -23,13 +23,13 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className='absolute top-0 left-0 right-0 container mx-auto'>
+    <div className='absolute top-0 left-0 right-0 container mx-auto px-4 md:px-0'>
       <div className='flex justify-between items-center w-full h-[80px]'>
         <div className='flex gap-1'>
           <img src='/images/logo.png' alt='logo' width='25' height='25' />
           <h3 className='text-white text-3xl font-semibold'>TeamFlow</h3>
         </div>
-        <ul className='flex space-x-4 text-lg text-white font-light'>
+        <ul className=' hidden md:flex space-x-4 text-lg text-white font-light '>
           {menus.map((menu, index) => (
             <li key={index}>
               <Link href={'/#'} className='flex items-center gap-1'>

@@ -19,14 +19,14 @@ export default function Banner({
   reverse,
 }: Props) {
   return (
-    <div className='py-24'>
+    <div className='py-20 md:py-24'>
       <div className='w-full bg-secondary'>
-        <div className='container mx-auto'>
+        <div className='container mx-auto px-4 py-4 md:py-0 md:px-0'>
           <div
-            className={`flex pt-5 items-center justify-between ${
-              reverse ? 'flex-row-reverse' : ''
+            className={`flex flex-col gap-y-4 md:gap-y-0  pt-5 items-center justify-between ${
+              reverse ? 'md:flex-row-reverse' : ''
             }`}>
-            <div className='w-2/4'>
+            <div className='w-full md:w-2/4'>
               <img
                 src={`/images/${img}.svg`}
                 alt=''
@@ -34,7 +34,7 @@ export default function Banner({
                 height='100%'
               />
             </div>
-            <div className='w-2/4'>
+            <div className='w-full md:w-2/4'>
               <Heading text={title} />
               <Line background={background} />
               <Desc text={desc} />

@@ -1,5 +1,6 @@
 import Banner from '@/components/Banner';
 import Feature from '@/components/Feature';
+import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Integration from '@/components/Integration';
 import Navbar from '@/components/Navbar';
@@ -29,6 +30,7 @@ export default function Home() {
       <Visualize />
       <Support />
       <Subscribe />
+      <Footer />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Button from './Button';
 import { motion } from 'framer-motion';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { MdOutlineKeyboardArrowDown, MdClose } from 'react-icons/md';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,11 +85,11 @@ export default function Navbar() {
             className={`z-50 ${
               isHidden ? 'absolute' : 'fixed'
             } top-3 right-3 grid w-[50px] h-[50px] place-items-center`}>
-            <GiHamburgerMenu
-              color={isOpen ? 'black' : 'white'}
-              width={5}
-              height={5}
-            />
+            {isOpen ? (
+              <MdClose color='black' width={5} height={5} />
+            ) : (
+              <GiHamburgerMenu color='white' width={5} height={5} />
+            )}
           </motion.button>
           <motion.ul
             variants={{

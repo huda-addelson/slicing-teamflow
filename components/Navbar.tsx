@@ -11,10 +11,10 @@ export default function Navbar() {
   const [isHidden, setIsHidden] = useState(true);
   const [isClosed, setIsClosed] = useState(false);
 
-  const hiddenStyle = 'hidde';
+  const hiddenStyle = 'hidden';
 
   const visibleStyle =
-    'fixed space-y-10 bg-white w-full p-6 left-[20%] right-0 top-0 min-h-screen text-black pt-20 z-10';
+    'fixed space-y-10 bg-white w-full p-6 left-[30%] right-0 top-0 min-h-screen text-black pt-20 z-10';
 
   const bgStyle =
     'fixed  bg-opacity-70 space-y-10 bg-zinc-800 w-full p-6 left-0 right-0 top-0 min-h-screen text-black pt-20 z-0';
@@ -82,12 +82,14 @@ export default function Navbar() {
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
             onClick={toggleMenu}
-            className={
-              isHidden
-                ? 'z-50 absolute top-5 right-5 grid w-[50px] h-[50px] place-items-center'
-                : 'z-50 fixed top-5 right-5 grid w-[50px] h-[50px] place-items-center'
-            }>
-            <GiHamburgerMenu color='black' width={5} height={5} />
+            className={`z-50 ${
+              isHidden ? 'absolute' : 'fixed'
+            } top-3 right-3 grid w-[50px] h-[50px] place-items-center`}>
+            <GiHamburgerMenu
+              color={isOpen ? 'black' : 'white'}
+              width={5}
+              height={5}
+            />
           </motion.button>
           <motion.ul
             variants={{
@@ -110,7 +112,6 @@ export default function Navbar() {
                 },
               },
             }}
-            layout
             className={isHidden ? hiddenStyle : visibleStyle}>
             {menus.map((menu, index) => (
               <motion.li
@@ -127,7 +128,9 @@ export default function Navbar() {
             ))}
           </motion.ul>
         </motion.div>
-        <motion.div className={isHidden ? hiddenStyle : bgStyle}></motion.div>
+        <motion.div
+          className={isHidden ? hiddenStyle : bgStyle}
+          onClick={toggleMenu}></motion.div>
 
         <div className='gap-2 hidden lg:flex'>
           <Button title='Login' outline={true} />

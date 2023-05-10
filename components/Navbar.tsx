@@ -96,7 +96,7 @@ export default function Navbar() {
               open: {
                 clipPath: 'inset(0% 0% 0% 0% round 0px)',
                 transition: {
-                  type: 'tween',
+                  type: 'spring',
                   bounce: 0,
                   duration: 0.7,
                   delayChildren: 0.3,
@@ -106,7 +106,7 @@ export default function Navbar() {
               closed: {
                 clipPath: 'inset(10% 50% 90% 50% round 0px)',
                 transition: {
-                  type: 'keyframes',
+                  type: 'spring',
                   bounce: 0,
                   duration: 0.7,
                   delayChildren: 0.3,

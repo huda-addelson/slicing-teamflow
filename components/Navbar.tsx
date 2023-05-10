@@ -109,8 +109,6 @@ export default function Navbar() {
                   type: 'spring',
                   bounce: 0,
                   duration: 0.7,
-                  delayChildren: 0.3,
-                  staggerChildren: 0.05,
                 },
               },
             }}

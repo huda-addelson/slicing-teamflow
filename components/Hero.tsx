@@ -4,7 +4,7 @@ import Line from './Line';
 
 export default function Hero() {
   return (
-    <div className='container mx-auto flex w-full h-full items-center flex-col md:flex-row px-4 xl:px-10 gap-y-10 pt-28 md:pt-0'>
+    <div className='container mx-auto flex w-full h-full items-center flex-col md:flex-row px-4 xl:px-10 gap-y-10 pt-24 md:pt-0'>
       {/* Desc Hero */}
       <div className='flex flex-col  gap-y-2 w-full md:w-3/5 '>
         <span className='text-base md:text-xl p-2 bg-secondary rounded-md pr-6 font-thin w-fit'>

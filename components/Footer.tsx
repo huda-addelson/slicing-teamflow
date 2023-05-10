@@ -27,7 +27,7 @@ export default function Footer() {
     },
   ];
   return (
-    <div className='container mx-auto pt-24 pb-10 px-10 md:px-4'>
+    <div className='container mx-auto pt-24 pb-10 px-5 md:px-4'>
       {/* wrapper paling luar */}
       <div className='grid grid-cols-12 gap-y-10'>
         {/* wrapper grid kiri */}

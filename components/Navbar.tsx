@@ -60,7 +60,7 @@ export default function Navbar() {
           <img src='/images/logo.png' alt='logo' width='25' height='25' />
           <h3 className='text-white text-3xl font-semibold'>TeamFlow</h3>
         </div>
-        {/* <ul className=' hidden md:flex space-x-4 text-lg text-white font-light '>
+        <ul className='hidden md:flex space-x-4 text-lg text-white font-light '>
           {menus.map((menu, index) => (
             <li key={index}>
               <Link href={'/#'} className='flex items-center gap-1'>
@@ -71,7 +71,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-        </ul> */}
+        </ul>
         {/* Responsive Menu */}
         <motion.div
           initial={false}
@@ -83,7 +83,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
             onClick={toggleMenu}
             className={`z-50 ${
-              isHidden ? 'absolute' : 'fixed'
+              isHidden ? 'absolut md:hidden' : 'fixed'
             } top-3 right-3 grid w-[50px] h-[50px] place-items-center`}>
             {isOpen ? (
               <MdClose color='black' width={5} height={5} />
